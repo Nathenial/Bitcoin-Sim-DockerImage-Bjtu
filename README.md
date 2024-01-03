@@ -6,20 +6,16 @@
 
 ## 全节点镜像
 
-### 使用方法一：直接载入镜像
-
-在 **bitcoin:v1.0.tar** 所在目录，执行shell指令` docker load -i bitcoin:v1.0.tar ` 即可成功载入镜像。
-
-### 使用方法二：利用Dockerfile自行制作镜像
+### 构建方法：利用Dockerfile与源码制作镜像
 
 **注：** 此方法需宿主机联网，Dockerfile中编译线程数量需根据实际情况自定义。
 
 1. 下载**bitcoin core**源码，代码位置： **src/bitcoin**
-2. 将**Dockerfile**与**bitcoin core**源码置于同一目录下，执行shell指令 `docker build -t bitcoin:v1.0 .`，等待制作完成。
+2. 将**Dockerfile**与**bitcoin core**源码置于同一目录下，执行shell命令 `docker build -t bitcoin:v1.0 .`，等待制作完成。
 
 ## 轻节点镜像
 
-### 使用方法：直接载入镜像
+### 构建方法：直接载入镜像
 
-在 **bitcoin-light:v1.0.tar** 所在目录，执行**shell**指令 ' docker load -i bitcoin-light:v1.0.tar' 即可成功载入镜像。
+在 **bitcoin-light-v1.0.tar** 所在目录，执行**shell**命令 `docker load -i bitcoin-light-v1.0.tar` 即可成功载入镜像。
 
